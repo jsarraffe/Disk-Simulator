@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/jsarraffe/Desktop/CS315/DiskSim/CommonFiles/Queue.hpp
+
+/Users/jsarraffe/Desktop/CS315/DiskSim/CommonFiles/Request.hpp
+
+/Users/jsarraffe/Desktop/CS315/DiskSim/FCFS_Queue/FCFSQueue.cpp
+FCFSQueue.hpp
+/Users/jsarraffe/Desktop/CS315/DiskSim/FCFS_Queue/FCFSQueue.hpp
+../CommonFiles/Request.hpp
+/Users/jsarraffe/Desktop/CS315/DiskSim/CommonFiles/Request.hpp
+
+/Users/jsarraffe/Desktop/CS315/DiskSim/FCFS_Queue/FCFSQueue.hpp
+iostream
+-
+../CommonFiles/Queue.hpp
+/Users/jsarraffe/Desktop/CS315/DiskSim/CommonFiles/Queue.hpp
+FCFSQueueNode.hpp
+/Users/jsarraffe/Desktop/CS315/DiskSim/FCFS_Queue/FCFSQueueNode.hpp
+
+/Users/jsarraffe/Desktop/CS315/DiskSim/FCFS_Queue/FCFSQueueNode.hpp
+

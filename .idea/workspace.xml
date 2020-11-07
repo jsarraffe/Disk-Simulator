@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="DiskSim.x" targetName="clook.x" />
+      <config projectName="DiskSim.x" targetName="look.x" />
+      <config projectName="DiskSim.x" targetName="pu.x" />
+      <config projectName="DiskSim.x" targetName="st.x" />
+      <config projectName="DiskSim.x" targetName="fcfs.x" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4e4dada7-941a-47e3-b246-8db9d4f34587" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="NamedScopeManager">
+    <scope name="Look" pattern="file[DiskSim]:Look_Queue/*" />
+    <scope name="local" pattern="" />
+  </component>
+  <component name="ProjectId" id="1iZLbkRVw2gcfMRTKNye7Tv3UnD" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/CLook_Queue" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/CLook_Queue" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/PickUp_Queue" />
+      <recent name="$PROJECT_DIR$/Look_Queue" />
+      <recent name="$PROJECT_DIR$/ST_Queue" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/Event_Driver" />
+      <recent name="$PROJECT_DIR$/FCFS_Queue" />
+      <recent name="$PROJECT_DIR$/CommonFiles" />
+      <recent name="$PROJECT_DIR$/cmake-build-debug" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="CMake Application.pu.x">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="inputRequests.txt" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DiskSim.x" RUN_TARGET_NAME="DiskSim.x" EXPLICIT_BUILD_TARGET_NAME="all">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="clook.x" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="inputRequestFromGeeks.txt" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DiskSim.x" TARGET_NAME="clook.x" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DiskSim.x" RUN_TARGET_NAME="clook.x">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fcfs.x" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="inputRequestsFCFS.txt" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DiskSim.x" TARGET_NAME="fcfs.x" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DiskSim.x" RUN_TARGET_NAME="fcfs.x">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="look.x" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="inputRequestsFCFS.txt" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DiskSim.x" TARGET_NAME="look.x" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DiskSim.x" RUN_TARGET_NAME="look.x">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="pu.x" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="inputRequestPickUp2.txt" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DiskSim.x" TARGET_NAME="pu.x" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DiskSim.x" RUN_TARGET_NAME="pu.x">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="st.x" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="inputRequestsFCFS.txt" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DiskSim.x" TARGET_NAME="st.x" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DiskSim.x" RUN_TARGET_NAME="st.x">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.Build All" />
+      <item itemvalue="CMake Application.clook.x" />
+      <item itemvalue="CMake Application.fcfs.x" />
+      <item itemvalue="CMake Application.pu.x" />
+      <item itemvalue="CMake Application.look.x" />
+      <item itemvalue="CMake Application.st.x" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4e4dada7-941a-47e3-b246-8db9d4f34587" name="Default Changelist" comment="" />
+      <created>1538523493950</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1538523493950</updated>
+      <workItem from="1538523495862" duration="265000" />
+      <workItem from="1538526683497" duration="4000" />
+      <workItem from="1538673224284" duration="262000" />
+      <workItem from="1538673595737" duration="2917000" />
+      <workItem from="1539130360646" duration="4524000" />
+      <workItem from="1541041750436" duration="1200000" />
+      <workItem from="1542149750297" duration="238000" />
+      <workItem from="1543001280609" duration="20000" />
+      <workItem from="1602110241457" duration="11681000" />
+      <workItem from="1602204206009" duration="1924000" />
+      <workItem from="1602896063782" duration="1121000" />
+      <workItem from="1603341872423" duration="2731000" />
+      <workItem from="1603426444256" duration="37150000" />
+      <workItem from="1603587090511" duration="90938000" />
+      <workItem from="1604024406517" duration="52314000" />
+      <workItem from="1604430540930" duration="798000" />
+      <workItem from="1604528269641" duration="9146000" />
+      <workItem from="1604690589432" duration="14924000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Look_Queue/PickUpQueue.cpp</url>
+          <line>12</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/FCFS_Queue/FCFSQueue.cpp</url>
+          <line>4</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/PickUp_Queue/PickUpQueue.cpp</url>
+          <line>13</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/jsarraffe/Desktop/CS315/DiskSim/CommonFiles/Queue.hpp
+
+/Users/jsarraffe/Desktop/CS315/DiskSim/CommonFiles/Request.hpp
+
+/Users/jsarraffe/Desktop/CS315/DiskSim/PickUp_Queue/PickUpQueue.cpp
+PickUpQueue.hpp
+/Users/jsarraffe/Desktop/CS315/DiskSim/PickUp_Queue/PickUpQueue.hpp
+../CommonFiles/Request.hpp
+/Users/jsarraffe/Desktop/CS315/DiskSim/CommonFiles/Request.hpp
+
+/Users/jsarraffe/Desktop/CS315/DiskSim/PickUp_Queue/PickUpQueue.hpp
+iostream
+-
+../CommonFiles/Queue.hpp
+/Users/jsarraffe/Desktop/CS315/DiskSim/CommonFiles/Queue.hpp
+PickUpQueueNode.hpp
+/Users/jsarraffe/Desktop/CS315/DiskSim/PickUp_Queue/PickUpQueueNode.hpp
+
+/Users/jsarraffe/Desktop/CS315/DiskSim/PickUp_Queue/PickUpQueueNode.hpp
+

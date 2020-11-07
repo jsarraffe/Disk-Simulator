@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/jsarraffe/Desktop/CS315/DiskSim/CommonFiles/Queue.hpp
+
+/Users/jsarraffe/Desktop/CS315/DiskSim/CommonFiles/Request.hpp
+
+/Users/jsarraffe/Desktop/CS315/DiskSim/Look_Queue/LookQueue.h
+iostream
+-
+../CommonFiles/Queue.hpp
+/Users/jsarraffe/Desktop/CS315/DiskSim/CommonFiles/Queue.hpp
+LookQueueNode.h
+/Users/jsarraffe/Desktop/CS315/DiskSim/Look_Queue/LookQueueNode.h
+
+/Users/jsarraffe/Desktop/CS315/DiskSim/Look_Queue/LookQueueNode.h
+
+/Users/jsarraffe/Desktop/CS315/DiskSim/Look_Queue/main.cpp
+random
+-
+cstdlib
+-
+unistd.h
+-
+iostream
+-
+fstream
+-
+LookQueue.h
+/Users/jsarraffe/Desktop/CS315/DiskSim/Look_Queue/LookQueue.h
+../CommonFiles/Request.hpp
+/Users/jsarraffe/Desktop/CS315/DiskSim/CommonFiles/Request.hpp
+

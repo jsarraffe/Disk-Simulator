@@ -1,0 +1,7 @@
+/Users/jsarraffe/Desktop/CS315/DiskSim/cmake-build-debug/CMakeFiles/clook.x.dir
+/Users/jsarraffe/Desktop/CS315/DiskSim/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/jsarraffe/Desktop/CS315/DiskSim/cmake-build-debug/CMakeFiles/look.x.dir
+/Users/jsarraffe/Desktop/CS315/DiskSim/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/jsarraffe/Desktop/CS315/DiskSim/cmake-build-debug/CMakeFiles/pu.x.dir
+/Users/jsarraffe/Desktop/CS315/DiskSim/cmake-build-debug/CMakeFiles/st.x.dir
+/Users/jsarraffe/Desktop/CS315/DiskSim/cmake-build-debug/CMakeFiles/fcfs.x.dir
