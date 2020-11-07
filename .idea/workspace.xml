@@ -15,7 +15,15 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e4dada7-941a-47e3-b246-8db9d4f34587" name="Default Changelist" comment="" />
+    <list default="true" id="4e4dada7-941a-47e3-b246-8db9d4f34587" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PickUp_Queue/PickUpQueue.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/PickUp_Queue/PickUpQueue.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PickUp_Queue/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/PickUp_Queue/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ST_Queue/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ST_Queue/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/pu.x" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/pu.x" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/st.x" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/st.x" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,12 +48,17 @@
     <select />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="NamedScopeManager">
     <scope name="Look" pattern="file[DiskSim]:Look_Queue/*" />
     <scope name="local" pattern="" />
   </component>
   <component name="ProjectId" id="1iZLbkRVw2gcfMRTKNye7Tv3UnD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/CLook_Queue" />
@@ -149,12 +162,23 @@
       <workItem from="1604024406517" duration="52314000" />
       <workItem from="1604430540930" duration="798000" />
       <workItem from="1604528269641" duration="9146000" />
-      <workItem from="1604690589432" duration="14924000" />
+      <workItem from="1604690589432" duration="18511000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -168,11 +192,6 @@
           <url>file://$PROJECT_DIR$/FCFS_Queue/FCFSQueue.cpp</url>
           <line>4</line>
           <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/PickUp_Queue/PickUpQueue.cpp</url>
-          <line>13</line>
-          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

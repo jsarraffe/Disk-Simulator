@@ -7,7 +7,7 @@
 
 bool PickUpQueue::inBetweenHeadAndRWTrack(int cRWHeadTrack, int headTrack, int rNodeTrack) {
 
-    return ((cRWHeadTrack >= rNodeTrack && headTrack <= rNodeTrack) || (cRWHeadTrack <= rNodeTrack && headTrack >= rNodeTrack));
+    return ((cRWHeadTrack > rNodeTrack && headTrack < rNodeTrack) || (cRWHeadTrack < rNodeTrack && headTrack > rNodeTrack));
 }
 
 void PickUpQueue::addRequest(Request *request, int cRWHeadTrack, int cRWHeadSector) {
@@ -31,6 +31,15 @@ void PickUpQueue::addRequest(Request *request, int cRWHeadTrack, int cRWHeadSect
 
                 if (tmp->request()->track() < rNode->request()->track()) {
                     if (tmp->next()->request()->track() > rNode->request()->track()) {
+                        isInserted = true;
+                        rNode->next(tmp->next());
+                        tmp->next(rNode);
+                        break;
+                    }
+                }
+
+                else if(tmp->request()->track() == rNode->request()->track()){
+                    if(tmp->next()->request()->track() != rNode->request()->track()){
                         isInserted = true;
                         rNode->next(tmp->next());
                         tmp->next(rNode);

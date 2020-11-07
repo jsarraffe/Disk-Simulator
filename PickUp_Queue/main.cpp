@@ -194,10 +194,10 @@ int main(int argc, char *argv[]) {
     auto *request4 = new Request(4, 30, 5);
     auto *request5 = new Request(4, 35, 3);
     auto *request6 = new Request(4, 64, 4);
-    auto *request7 = new Request(4, 11, 4);
+    auto *request7 = new Request(4, 87, 8);
     auto *request8 = new Request(4, 23, 6);
     int _intRwh = 100;
-    std::cout<<"r/w:" <<_intRwh<<" Inserting request with tracks: 79, 53, 79, 52, 5"<<std::endl;
+    std::cout<<"r/w:" <<_intRwh<<" "<<std::endl;
     queue2->addRequest(request1,_intRwh,8);
     queue2->addRequest(request2,_intRwh,9);
     queue2->addRequest(request3,_intRwh,3);

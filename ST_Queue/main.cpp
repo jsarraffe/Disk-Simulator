@@ -196,9 +196,9 @@ int main(int argc, char *argv[]) {
     auto *request7 = new Request(4, 11, 4);
     auto *request8 = new Request(4, 23, 6);
 
-    int _intRwh = 100;
+    int _intRwh = 99;
 
-    std::cout<<"r/w:" <<_intRwh<<" Inserting request with tracks: 87, 35, 22, 30, 31, 87, 11, 23"<<std::endl;
+    std::cout<<"r/w:" <<_intRwh<<" "<<std::endl;
     queue2->addRequest(request1,_intRwh,8);
     queue2->addRequest(request2,_intRwh,9);
     queue2->addRequest(request3,_intRwh,3);
