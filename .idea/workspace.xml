@@ -16,11 +16,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e4dada7-941a-47e3-b246-8db9d4f34587" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PickUp_Queue/PickUpQueue.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/PickUp_Queue/PickUpQueue.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLook_Queue/CLookQueue.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CLook_Queue/CLookQueue.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLook_Queue/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CLook_Queue/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Look_Queue/LookQueue.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Look_Queue/LookQueue.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Look_Queue/LookQueue.h" beforeDir="false" afterPath="$PROJECT_DIR$/Look_Queue/LookQueue.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Look_Queue/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Look_Queue/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PickUp_Queue/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/PickUp_Queue/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ST_Queue/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ST_Queue/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pu.x.dir/PickUp_Queue/PickUpQueue.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pu.x.dir/PickUp_Queue/PickUpQueue.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pu.x.dir/PickUp_Queue/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pu.x.dir/PickUp_Queue/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/st.x.dir/ST_Queue/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/st.x.dir/ST_Queue/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/clook.x" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/clook.x" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/look.x" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/look.x" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/pu.x" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/pu.x" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/st.x" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/st.x" afterDir="false" />
     </list>
@@ -111,7 +119,7 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="look.x" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="inputRequestsFCFS.txt" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DiskSim.x" TARGET_NAME="look.x" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DiskSim.x" RUN_TARGET_NAME="look.x">
+    <configuration name="look.x" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="inputRequestFromGeeks.txt" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DiskSim.x" TARGET_NAME="look.x" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DiskSim.x" RUN_TARGET_NAME="look.x">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -162,8 +170,16 @@
       <workItem from="1604024406517" duration="52314000" />
       <workItem from="1604430540930" duration="798000" />
       <workItem from="1604528269641" duration="9146000" />
-      <workItem from="1604690589432" duration="18511000" />
+      <workItem from="1604690589432" duration="23404000" />
     </task>
+    <task id="LOCAL-00001" summary="THIS SHIT WORKS">
+      <created>1604776858022</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604776858022</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +196,10 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="THIS SHIT WORKS" />
+    <option name="LAST_COMMIT_MESSAGE" value="THIS SHIT WORKS" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -192,6 +212,11 @@
           <url>file://$PROJECT_DIR$/FCFS_Queue/FCFSQueue.cpp</url>
           <line>4</line>
           <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Look_Queue/main.cpp</url>
+          <line>73</line>
+          <option name="timeStamp" value="45" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

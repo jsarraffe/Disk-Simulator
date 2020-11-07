@@ -1,99 +1,140 @@
 //
-// Created by Jacques Sarraffe on 10/27/20.
+// Created by Jacques Sarraffe on 10/30/20.
 //
 
 #include "LookQueue.h"
+
 #include "../CommonFiles/Request.hpp"
 
-bool LookQueue::inBetweenHeadAndRWTrack(int cRWHeadTrack, int headTrack, int rNodeTrack) {
+LookQueueNode *LookQueue::addToOrderedListDec(LookQueueNode *list, Request *req) {
+    LookQueueNode *tmp = list;
+    LookQueueNode *rNode = new LookQueueNode(req);
+    if( list == NULL) {
+        return rNode;
+    }
+    else{
+        if(tmp->request()->track() < rNode->request()->track())
+        {
+            rNode->next(list);
+            return rNode;
+        }
+        else{
+            while(tmp->next() != NULL)
+            {
+                if(tmp->request()->track() >= rNode->request()->track())
+                {
+                    if(tmp->next()->request()->track() < rNode->request()->track())
+                    {
+                        rNode->next(tmp->next());
+                        tmp->next(rNode);
+                        return list;
 
-    return ((cRWHeadTrack <= rNodeTrack && rNodeTrack <= headTrack ));
-
+                    }
+                }
+                tmp = tmp->next();
+            }
+            if(tmp->next() == NULL)
+            {
+                tmp->next(rNode);
+                tmp = rNode;
+                return list;
+            }
+        }
+    }
 }
-void LookQueue::addRequest(Request *request, int cRWHeadTrack, int cRWHeadSector) {
+LookQueueNode *LookQueue::addToOrderedList(LookQueueNode *list, Request *req) {
+    //function adds an element in a linked list in increasing order.
+    LookQueueNode *tmp = list;
+    LookQueueNode *rNode = new LookQueueNode(req);
+    if( list == NULL) {
+        return rNode;
+    }
+    else{
+        if(tmp->request()->track() > rNode->request()->track())
+        {
+            rNode->next(list);
+            return rNode;
+        }
+        else{
+            while(tmp->next() != NULL)
+            {
+                if(tmp->request()->track() <= rNode->request()->track())
+                {
+                    if(tmp->next()->request()->track() > rNode->request()->track())
+                    {
+                        rNode->next(tmp->next());
+                        tmp->next(rNode);
+                        return list;
 
-    bool isInserted = false;
-    LookQueueNode *rNode = new LookQueueNode(request);
-    LookQueueNode *tmp = head;
-    if( empty() ) {
-        head = tail = rNode;
-    } else {
-        if(inBetweenHeadAndRWTrack(cRWHeadTrack, head->request()->track(), rNode->request()->track())){
-             isInserted = true;
-             rNode->next(head);
-             head = rNode;
-        }
-        else if(rNode->request()->track() > cRWHeadTrack && !isInserted){
-            while (tmp != tail) {    //Check to see if it can get inserted somewhere in the queue in ascending order
-                //otherwise check to see if you can insert it in descending order
-                if (tmp->request()->track() <= rNode->request()->track()) {
-                    if (tmp->next()->request()->track() > rNode->request()->track()) {
-                        isInserted = true;
-                        rNode->next(tmp->next());
-                        tmp->next(rNode);
-                        break;
-                    }
-                    else if(tmp->next()->request()->track() < cRWHeadTrack) {
-                        if(tmp->next()->request()->track() < rNode->request()->track())
-                        {
-                            isInserted = true;
-                            rNode->next(tmp->next());
-                            tmp->next(rNode);
-                            break;
-                        }
                     }
                 }
                 tmp = tmp->next();
             }
-        }
-        else if(rNode->request()->track() < cRWHeadTrack && !isInserted){
-            LookQueueNode *tmp = head;
-            while (tmp != tail) {    //Check to see if it can get inserted somewhere in the queue, in decending order
-                if (tmp->request()->track() > rNode->request()->track()) {
-                    if (tmp->next()->request()->track() < rNode->request()->track()) {
-                        isInserted = true;
-                        rNode->next(tmp->next());
-                        tmp->next(rNode);
-                        break;
-                    }
-                }
-                tmp = tmp->next();
+            if(tmp->next() == NULL)
+            {
+                tmp->next(rNode);
+                tmp = rNode;
+                return list;
             }
-        }
-        if (!isInserted) {
-            tail->next(rNode);
-            tail = rNode;
         }
     }
 }
 
+void LookQueue::addRequest(Request *request, int cRWHeadTrack, int cRWHeadSector) {
+    //Function fills out two linked list, one for request below the R/w head and one above it
+
+    if(cRWHeadTrack <= request->track())
+    {
+        curr = addToOrderedList(curr, request);
+    }
+    else{
+        next = addToOrderedListDec(next, request);
+    }
+}
 Request *LookQueue::getRequest() {
-    if (empty()) {
+    if( empty() ) {
         std::cout << "Calling LookQueueNode::getRequest() on an empty queue. Terminating...\n";
         exit(1);
     }
-    LookQueueNode *LookNode = head;
+
+    if(curr == NULL){
+        curr = next;
+        next = NULL;
+    }
+    LookQueueNode *LookNode = curr;
+
+
     Request *request = LookNode->request();
-    head = head->next();
-    if (head == nullptr)
-        tail = nullptr;
+    curr = curr->next();
     delete LookNode;
     return request;
 }
 
 bool LookQueue::empty() {
-    return head == nullptr;
+    return (curr == NULL && next == NULL);
 }
 
 void LookQueue::print() {
-    for (auto cur = head; cur; cur = cur->next())
+    for(auto cur = curr; cur; cur = cur->next() )
+        cur->request()->print();
+    for(auto cur = next; cur; cur = cur->next() )
         cur->request()->print();
 }
 
 LookQueue::~LookQueue() {
-    while (head != nullptr) {
-        LookQueueNode *node = head;
-        head = node->next();
+    while( curr != nullptr ) {
+        LookQueueNode *node = curr;
+        curr = node->next();
+        delete node;
+    }
+    while( next != nullptr ) {
+        LookQueueNode *node = next;
+        next = node->next();
         delete node;
     }
 }
+
+
+
+
+

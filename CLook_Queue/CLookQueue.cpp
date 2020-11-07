@@ -60,11 +60,14 @@ Request *CLookQueue::getRequest() {
         std::cout << "Calling CLookQueueNode::getRequest() on an empty queue. Terminating...\n";
         exit(1);
     }
+
     if(curr == NULL){
         curr = next;
         next = NULL;
     }
     CLookQueueNode *cLookNode = curr;
+
+
     Request *request = cLookNode->request();
     curr = curr->next();
     delete cLookNode;

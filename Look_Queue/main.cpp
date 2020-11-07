@@ -39,46 +39,38 @@ int main(int argc, char *argv[]) {
     LookQueue *queue = nullptr;
 
 //    if( randomTest )
-//        queue = createSTueueFromRandomValues(300, 200);
+//        queue = createSTQueueFromRandomValues(300, 200);
 //    else
-    queue = createSTQueueFromInputFile(argc, argv);
+
+queue = createSTQueueFromInputFile(argc, argv);
+
 
     queue->print();
 
     LookQueue *queue2 = new LookQueue();
-    auto *request1 = new Request(1, 79, 4);
-    auto *request2 = new Request(2, 53, 4);
-    auto *request3 = new Request(3, 3, 4);
-    auto *request4 = new Request(4, 53, 4);
-    auto *request5 = new Request(4, 5, 4);
+    auto *request1 = new Request(1, 22, 4);
+    auto *request2 = new Request(2, 52, 4);
+    auto *request3 = new Request(3, 3, 2);
+    auto *request4 = new Request(4, 53, 5);
+    auto *request5 = new Request(4, 3, 3);
+    auto *request6 = new Request(4, 8, 4);
+    auto *request7 = new Request(4, 51, 4);
+    auto *request8 = new Request(4, 53, 6);
 
     std::cout<<" "<<std::endl;
     std::cout<<"Queue 2"<<std::endl;
 
+    int _intRwh = 12;
 
-//    std::cout<<"r/w: 80 Inserting request with tracks: 79, 53, 79, 52, 5"<<std::endl;
-//    queue2->addRequest(request1,79,8);
-//    queue2->addRequest(request2,79,9);
-//    queue2->addRequest(request3,79,8);
-//    queue2->addRequest(request4,79,8);
-//    queue2->addRequest(request5,79,8);
-
-//    std::cout<<"r/w: 50 Inserting request with tracks: 79, 53, 79, 52, 5"<<std::endl;
-//    queue2->addRequest(request1,50,8);
-//    queue2->addRequest(request2,50,9);
-//    queue2->addRequest(request3,50,8);
-//    queue2->addRequest(request4,50,8);
-//    queue2->addRequest(request5,50,8);
-
-
-
-    //Checking to see if the Same Track algorithm
-    std::cout<<"r/w: 0 Inserting request with tracks: 79, 53, 79, 53, 5"<<std::endl;
-    queue2->addRequest(request1,0,8);
-    queue2->addRequest(request2,0,9);
-    queue2->addRequest(request3,0,8);
-    queue2->addRequest(request4,0,8);
-    queue2->addRequest(request5,0,8);
+    std::cout<<"r/w:" <<_intRwh<<""<<std::endl;
+    queue2->addRequest(request1,_intRwh,8);
+    queue2->addRequest(request2,_intRwh,9);
+    queue2->addRequest(request3,_intRwh,3);
+    queue2->addRequest(request4,_intRwh,2);
+    queue2->addRequest(request5,_intRwh,6);
+    queue2->addRequest(request6,_intRwh,3);
+    queue2->addRequest(request7,_intRwh,4);
+    queue2->addRequest(request8,_intRwh,6);
 
     queue2->print();
     std::cout<<"Getting a request"<<std::endl;
@@ -97,6 +89,7 @@ int main(int argc, char *argv[]) {
 
 
     delete queue2;
+
 
 
     delete queue;

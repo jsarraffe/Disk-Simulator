@@ -191,8 +191,8 @@ int main(int argc, char *argv[]) {
     auto *request2 = new Request(2, 35, 4);
     auto *request3 = new Request(3, 22, 2);
     auto *request4 = new Request(4, 30, 5);
-    auto *request5 = new Request(4, 31, 3);
-    auto *request6 = new Request(4, 87, 4);
+    auto *request5 = new Request(4, 35, 6);
+    auto *request6 = new Request(4, 87, 8);
     auto *request7 = new Request(4, 11, 4);
     auto *request8 = new Request(4, 23, 6);
 

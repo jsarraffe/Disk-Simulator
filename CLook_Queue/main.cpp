@@ -201,7 +201,7 @@ int main(int argc, char *argv[]) {
 
     int _intRwh = 0;
 
-    std::cout<<"r/w:" <<_intRwh<<" Inserting request with tracks: 79, 53, 79, 52, 5"<<std::endl;
+    std::cout<<"r/w:" <<_intRwh<<""<<std::endl;
     queue2->addRequest(request1,_intRwh,8);
     queue2->addRequest(request2,_intRwh,9);
     queue2->addRequest(request3,_intRwh,3);
