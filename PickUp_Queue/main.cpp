@@ -17,6 +17,7 @@ PickUpQueue *createSTQueueFromInputFile(int argc, char *argv[] ) {
     if( argc != 2) {
         std::cout << "usage: " << argv[0] << " nameOfAnInputFile\n";
         exit(1);
+        
     }
 
     std::ifstream inputStream;
