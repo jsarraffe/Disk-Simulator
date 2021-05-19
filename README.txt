@@ -1,22 +1,40 @@
 Jacques Sarraffe
 
-LIST OF PEOPLE WHO HAVE HELPED ME
-
-Guy Greenleaf:  
-- Guy and I were both in tutoring, and I was confused about how the r/w head would affect add_request in STqueue. He screenshared with me, and drew out what would happen given a certain r/w head, and request for a certain queue, which then led to my understanding of the project.
+Stimulates Hard disk drive actions using priority queues in C++
 
 
-Ali Kooshesh:
+An example of compiling and running each queue:
 
-- Drastically cut the amount of code in my pickup function, when he recommended I add a helper for function for request that get added to the head, basically request thats track
-is between the r/w head and the heads track.
 
-- While I had Clook almost done, their was one bug that kept driving me crazy I also had like 90+ lines of code. He showed a more compact way, and easier way to implement CLook. Using curr and next, as linked list, and one helper function I was able to solve the problem more efficiently and with less code than my previous example. Thank you very much once again, that made my life a lot easier.
+1. Compile and run FCFS queue
 
-A LIST OF PEOPLE WHOM I HAVE HELPED:
+$ g++ -std=c++17 CommonFiles/Request.cpp FCFS_Queue/FCFSQueue.cpp FCFS_Queue/FCFSQueueNode.cpp FCFS_Queue/main.cpp -o fcfs.x
+$ ./fcfs.x inputRequest.txt
 
-Unfortunately I have not helped anyone on this project.
+------------------------------------------------------------------------------
 
-NO CODE WAS COPIED OR TAKEN FROM A WEBSITE.
+2. Compile and run ST queue
 
-I have implemented all features part of the project requirements.
+$ g++ -std=c++17 CommonFiles/Request.cpp ST_Queue/STQueue.cpp ST_Queue/STQueueNode.cpp ST_Queue/main.cpp -o st.x
+$ ./st.x inputRequest.txt
+
+------------------------------------------------------------------------------
+
+3. Compile and run PickUp Queue
+
+$ g++ -std=c++17 CommonFiles/Request.cpp PickUp_Queue/PickUpQueue.cpp PickUp_Queue/PickUpQueueNode.cpp PickUp_Queue/main.cpp -o pu.x
+$ ./pu.x inputRequest.txt
+
+-------------------------------------------------------------------------------
+
+4. Compile and run LookUp queue
+
+$ g++ -std=c++17 CommonFiles/Request.cpp Look_Queue/LookQueue.cpp Look_Queue/LookQueueNode.cpp Look_Queue/main.cpp -o lu.x
+$ ./lu.x inputRequest.txt
+
+--------------------------------------------------------------------------------
+
+5. Compile and run CLookUp queue
+
+$ g++ -std=c++17 CommonFiles/Request.cpp CLook_Queue/CLookQueue.cpp CLook_Queue/CLookQueueNode.cpp CLook_Queue/main.cpp -o cl.x
+$ ./clu.x inputRequest.txt
