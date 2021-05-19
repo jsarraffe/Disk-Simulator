@@ -51,6 +51,7 @@ LookQueueNode *LookQueue::addToOrderedList(LookQueueNode *list, Request *req) {
         return rNode;
     }
     else{
+        
         if(tmp->request()->track() > rNode->request()->track())
         {
             rNode->next(list);
