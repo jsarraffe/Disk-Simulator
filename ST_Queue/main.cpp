@@ -20,6 +20,7 @@ Request *generateRandomRequest() {
         MAX_TRACK = 100,
         MAX_SECTOR = 30
     };
+    //
 
     currentTime += (int) (random() % MAX_TIME_INTERVAL + 1);   // advance current time by at most 100 msecs
     int track = (int) (random() % MAX_TRACK);
