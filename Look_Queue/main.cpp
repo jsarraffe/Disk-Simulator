@@ -27,6 +27,7 @@ LookQueue *createSTQueueFromInputFile(int argc, char *argv[] ) {
     }
     auto *queue = new LookQueue();
     int time, track, sector;
+    
     while(inputStream >> time && inputStream >> track && inputStream >> sector) {
         auto *request = new Request(time, track, sector);
         queue->addRequest(request, 79,0);
