@@ -6,6 +6,20 @@ Stimulates Hard disk drive actions using priority queues in C++
 An example of compiling and running each queue:
 
 
+
+
+
+--------------------
+
+SECTOR TRACK AND QQUEUE
+
+
+
+
+------------------
+
+
+
 1. Compile and run FCFS queue
 
 $ g++ -std=c++17 CommonFiles/Request.cpp FCFS_Queue/FCFSQueue.cpp FCFS_Queue/FCFSQueueNode.cpp FCFS_Queue/main.cpp -o fcfs.x
